@@ -1,6 +1,9 @@
 import React from "react";  //para que este archivo use REACT
+import "../hojas_de_estilo/ejemplo_comp.css"; /* importa la hoja de estilo para este componente */
 
-function NombreComponente(){   //declaramos un comp.funcional sin props()
+
+
+function NombreComponente(props){   //declaramos un comp.funcional sin props()
   return(     //un comp.funcional retorna elemento jsx (html/js) 
 
     <div className="contenedor-testimonio">
@@ -12,9 +15,9 @@ function NombreComponente(){   //declaramos un comp.funcional sin props()
 
       <div className="contenedor-texto-testimonio">
 
-        <p className="nombre-testimonio">ISABEL</p>
-        <p className="cargo-testimonio">INGENIERA DE SOFTWARE</p>
-        <p className="nombre-testimonio">Un perfil de ingeniero abarca la aplicación de principios científicos y matemáticos para diseñar, desarrollar y optimizar soluciones a problemas complejos, creando sistemas, estructuras y productos funcionales. Las características clave incluyen la capacidad de resolver problemas, el pensamiento innovador, habilidades técnicas, trabajo en equipo, gestión de proyectos y un fuerte sentido de la ética profesional enfocada en el beneficio social. </p>
+        <p className="nombre-testimonio">{props.nombre} en {props.pais}</p>
+        <p className="cargo-testimonio">{props.cargo} en {props.empresa}</p>
+        <p className="texto-testimonio">{props.testimonio}</p>
       </div>
 
     </div>
