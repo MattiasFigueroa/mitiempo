@@ -158,7 +158,7 @@ class Usuarios(models.Model):
     nombre_usuario = models.CharField(max_length=100)
     apellido_usuario = models.CharField(max_length=100)
     usuario = models.CharField(max_length=100)
-    contraseña = models.CharField(max_length=255)
+    contrasenia = models.CharField(max_length=255)
     rol_usuario = models.CharField(max_length=8)
 
     class Meta:
