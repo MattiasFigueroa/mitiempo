@@ -75,15 +75,8 @@ WSGI_APPLICATION = 'mitiempo_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nombre_de_tu_base_de_datos',
-        'USER': 'tu_usuario_mysql',
-        'PASSWORD': 'tu_contraseña_mysql',
-        'HOST': 'localhost',  # o la IP del servidor MySQL
-        'PORT': '3306',       # puerto por defecto de MySQL
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
