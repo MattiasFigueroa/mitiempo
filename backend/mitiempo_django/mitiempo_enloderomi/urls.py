@@ -1,5 +1,7 @@
 from django.urls import path
-from . import views
+from .views import user_info
+
 urlpatterns = [
-    path('', views.mi_vista, name='mi_vista'),
+    path('user/', user_info, name='user_info'),
 ]
+
