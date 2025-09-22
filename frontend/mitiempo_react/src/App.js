@@ -8,6 +8,7 @@ import Dashboard from './Dashboard.js';
 
 function App() {
   return (
+    HEAD
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
